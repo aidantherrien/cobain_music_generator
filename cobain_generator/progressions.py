@@ -17,13 +17,6 @@ TEMPLATES: dict[str, dict] = {
         "notes": "Classic Cobain axis between IV, bIII, and bVI",
     },
 
-    "rape_me": {
-        "name": "Rape Me",
-        "offsets": [0, 3, 7, 10],   # I  bIII  V  bVII
-        "contour": "minor-third rise, jumps to V, resolves upward to bVII",
-        "notes": "A5 -> C5 -> E5 -> G5 outlines stacked minor-third motion",
-    },
-
     "polly": {
         "name": "Polly",
         "offsets": [0, 3, 10, 8],   # I  bIII  bVII  bVI

@@ -1,0 +1,15 @@
+=== Comparison: E Ballad (8 bars) ===
+
+Power chord progression:   E5  B5  G5  F5  C#5
+Diatonic progression:      E  B  G  F  C#m
+
+Interval analysis (root motion semitones):
+  +m6              2x
+  +P5              1x
+  +m7(bVII)        1x
+
+Non-diatonic chords (vs E major): 2/5 (40%)
+
+Note: Power chords omit thirds -- no major/minor declared.
+The same melody plays over both progressions; the harmonic
+context shifts completely without changing a single melody note.

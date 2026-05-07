@@ -1,0 +1,19 @@
+# Cobain Harmonic Ambiguity Generator
+# Python 3.11 required (use the musc448c conda env)
+# Install: conda run -n musc448c pip install -r requirements.txt
+
+music21>=9.9.1
+mido>=1.3.3
+midi2audio>=0.1.1
+pretty_midi>=0.2.10
+numpy>=1.26.0
+matplotlib>=3.7.0
+ipywidgets>=8.0.0
+jupyter>=1.0.0
+notebook>=7.0.0
+ipykernel>=6.0.0
+
+# Audio rendering (FluidSynth binary must be installed separately):
+# https://github.com/FluidSynth/fluidsynth/releases
+# Soundfont (.sf2): https://schristiancollins.com/generaluser.php
+# Place soundfont in: assets/soundfonts/

@@ -1,6 +1,4 @@
-from .config import ProgressionConfig, MelodyConfig, MidiBuilderConfig, AudioConfig
-from .chord_generator import PowerChordProgressionGenerator
-from .melody_generator import MelodyGenerator
-from .midi_builder import MidiBuilder
-from .audio_renderer import AudioRenderer
-from .comparison import ComparisonGenerator, ComparisonConfig
+from .config import MelodyConfig
+from .phrase_melody_generator import PhraseMelodyGenerator
+from .scales import midi_to_name, pitch_class_name, get_scale_pitches
+from . import progressions

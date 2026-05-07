@@ -67,6 +67,28 @@ class MelodyConfig:
 
     backend: str = "markov"
 
+    phrase_type: str = "auto"
+    # Used when backend="phrase".
+    # "auto"     = cycle [question, answer, ...], 25% chance second phrase of each pair becomes pedal
+    # "question" = all phrases ascend stepwise to a tension tone
+    # "answer"   = all phrases descend stepwise back to root
+    # "pedal"    = all phrases hold one pitch rhythmically (Lithium / In Bloom style)
+
+    syncopation: float = 0.0
+    # Probability of anticipation syncopation on each note transition (0.0–1.0).
+    # Each eligible note-pair has a syncopation * 0.4 chance of the second note
+    # being shifted 0.25 beats early (borrowing time from the preceding note).
+    # 0 = on-the-beat; 0.5 = moderate groove; 1.0 = highly syncopated.
+
+    apex_pc: int | None = None
+    # Pitch class (0=C … 11=B) of the phrase apex — the tension/goal tone for question phrases.
+    # None = default to the 5th above key_root (7 semitones up).
+    # Set to the mode's characteristic degree for modal demonstrations:
+    #   aeolian b6:     (key_root + 8)  % 12
+    #   dorian ^6:      (key_root + 9)  % 12
+    #   mixolydian b7:  (key_root + 10) % 12
+    #   phrygian b2:    (key_root + 1)  % 12
+
 
 @dataclass
 class MidiBuilderConfig:
